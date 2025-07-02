@@ -1,193 +1,616 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to the Laugh Tale!</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-     <script
-      src="https://kit.fontawesome.com/238b66aad4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <header id="encabezado">
-        <!-- <a href="index.html"><i class="fa-solid fa-gamepad"></i></a> -->
-        <h1 class="logo">
-          <a href="https://egg.live/" class="fuente-acento">
-            <i class="fa-brands fa-themeisle"></i></a>
-        </h1>
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de mi</a></li>
-            <li><a href="#">Trabajos</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main id="seccion-principal">
-        <section class="seccion-1">
-          <div class="card">
-            <section class="profile-image">&nbsp;</section>
-            <section class="content">
-              <h1 class="titulo1-card">Un poco sobre mi</h1>
-              <p class="parrafo1-card">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Vivamus integer non suscipit taciti mus etiam at primis tempor
-                sagittis sit, euismod libero facilisi aptent elementum felis
-                blandit cursus gravida sociis erat ante, eleifend lectus nullam
-                dapibus netus feugiat curae curabitur est ad.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                libero minus eaque sequi quam ducimus modi, quo, vitae porro
-                nostrum maxime possimus ullam culpa architecto repellendus?
-                Provident, cupiditate? Modi, necessitatibus?.
-              </p>
-              <section class="footer">
-                <ul class="icons">
-                  <li>
-                    <a href="#" class="icon"
-                      ><i class="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="icon"
-                      ><i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="icon"
-                      ><i class="fa-brands fa-instagram"></i
-                    ></a>
-                  </li>
-                </ul>
-              </section>
-            </section>
-          </div>
-        </section>
-        <!-- <section class="seccion-1">
-          <div>
-            <h2>Un poco de mi</h2>
-            <p>Eres bienvenido</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              necessitatibus debitis laborum, perferendis facilis autem incidunt
-              porro eveniet ut aperiam labore repellendus possimus omnis soluta
-              facere velit quasi? Odit, unde!
-            </p>
-          </div>
-          <div class="acerca-imagen">
-            <img src="img/perfil.jpg" alt="imagen perfil" width="250px" />
-          </div>
-        </section> -->
-        <section class="seccion-2">
-          <img src="img/fondo2.jpg" alt="" width="100%" />
-        </section>
-        <section class="seccion-3">
-          <article>
-            <div class="img-article">
-              <img src="img/perfil.jpg" alt="imagen perfil" width="250px" />
-            </div>
-            <h3 class="titulo-article">Articulo 1</h3>
-            <p class="content-article">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Necessitatibus ratione fuga quis voluptatem, ex ullam consequatur
-              dolorum ducimus omnis aperiam saepe ipsa temporibus aliquid odio
-              unde quasi recusandae sit laudantium.
-            </p>
-            <a href="#" class="link-article">Saber más</a>
-          </article>
-          <article>
-            <div class="img-article">
-              <img src="img/perfil.jpg" alt="imagen perfil" width="250px" />
-            </div>
-            <h3 class="titulo-article">Articulo 2</h3>
-            <p class="content-article">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Necessitatibus ratione fuga quis voluptatem, ex ullam consequatur
-              dolorum ducimus omnis aperiam saepe ipsa temporibus aliquid odio
-              unde quasi recusandae sit laudantium.
-            </p>
-            <a href="#" class="link-article">Saber más</a>
-          </article>
-          <article>
-            <div class="img-article">
-              <img src="img/perfil.jpg" alt="imagen perfil" width="250px" />
-            </div>
-            <h3 class="titulo-article">Articulo 3</h3>
-            <p class="content-article">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Necessitatibus ratione fuga quis voluptatem, ex ullam consequatur
-              dolorum ducimus omnis aperiam saepe ipsa temporibus aliquid odio
-              unde quasi recusandae sit laudantium.
-            </p>
-            <a href="#" class="link-article">Saber más</a>
-          </article>
-        </section>
-      </main>
-
-      <footer>
-
-        <section class="contacto form-header"  >
-          <h1>Contacto</h1>
-          <p><em>¡Esperamos tu consulta!</em></p>
-
-          <form action="" method="get" class="formulario" id="form">
-            <div class="form-row">
-              <label for="nombre">Nombre(*)</label>
-              <input id="nombre" name="nombre" type="text" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email(*)</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="pepe@gmail.com"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="mensaje">Mensaje(*)</label>
-              <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <div class="form-row">
-              <button>Enviar</button>
-              <!-- <button type="submit"> Enviar </button> -->
-            </div>
-            <p class="alertas" id="alertas"></p>
-          </form>
-        </section>
-
-        <section class="footer-main">
-          <a href="">Mi primera Página Web</a>
-          <ul>
-            <li>Inicio</li>
-            <li>Acerca de mi</li>
-            <li>Trabajos</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
-          </ul>
-        </section>
-      </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo - Lugares Turísticos de Huaraz 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .container {
+            display: flex;
+            height: calc(100vh - 120px);
+        }
+        
+        .sidebar {
+            width: 350px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .category {
+            margin-bottom: 25px;
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .category h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .place-item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .place-item:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+        }
+        
+        .place-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .classic { background-color: #e74c3c; }
+        .new-routes { background-color: #f39c12; }
+        .panoramic { background-color: #9b59b6; }
+        .lagoons { background-color: #3498db; }
+        .mountaineering { background-color: #27ae60; }
+        .trekking { background-color: #34495e; }
+        
+        #map {
+            flex: 1;
+            border-radius: 0 0 0 10px;
+        }
+        
+        .leaflet-popup-content {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .popup-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .popup-category {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        
+        .popup-description {
+            color: #34495e;
+            line-height: 1.4;
+        }
+        
+        .legend {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-size: 0.9em;
+        }
+        
+        .legend h4 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+        <div class="header">
+        <h1>🏔️ Mapa Interactivo Completo de Huaraz 2025</h1>
+        <p>Explora todos los destinos turísticos actualizados - Desde clásicos hasta nuevos descubrimientos</p>
     </div>
-  </body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="category">
+                <h3>🌟 Tours Clásicos</h3>
+                <div class="place-item" onclick="focusPlace('laguna69')">
+                    <div class="place-dot classic"></div>
+                    <span>Laguna 69</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('llanganuco')">
+                    <div class="place-dot classic"></div>
+                    <span>Lagunas de Llanganuco</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('chavin')">
+                    <div class="place-dot classic"></div>
+                    <span>Chavín de Huántar</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('pastoruri')">
+                    <div class="place-dot classic"></div>
+                    <span>Nevado Pastoruri</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>🥾 Nuevas Rutas</h3>
+                <div class="place-item" onclick="focusPlace('wilcacocha')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Laguna Wilcacocha</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('churup')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Laguna Churup</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('radian')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Lagunas Radian y Mullaca</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('rocotuyoc')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Rocotuyoc y Laguna Conga</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>🚗 Rutas Panorámicas</h3>
+                <div class="place-item" onclick="focusPlace('olimpica')">
+                    <div class="place-dot panoramic"></div>
+                    <span>Punta Olímpica</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('canonpato')">
+                    <div class="place-dot panoramic"></div>
+                    <span>Cañón del Pato</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>💎 Lagunas Especiales</h3>
+                <div class="place-item" onclick="focusPlace('paron')">
+                    <div class="place-dot lagoons"></div>
+                    <span>Laguna Parón</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('laguna513')">
+                    <div class="place-dot lagoons"></div>
+                    <span>Laguna 513</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('keushu')">
+                    <div class="place-dot lagoons"></div>
+                    <span>Laguna de Keushu</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>⛰️ Montañismo</h3>
+                <div class="place-item" onclick="focusPlace('mateo')">
+                    <div class="place-dot mountaineering"></div>
+                    <span>Nevado Mateo</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('vallunaraju')">
+                    <div class="place-dot mountaineering"></div>
+                    <span>Nevado Vallunaraju</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>🌊 Nuevos Descubrimientos</h3>
+                <div class="place-item" onclick="focusPlace('rajucolta')">
+                    <div class="place-dot classic"></div>
+                    <span>Laguna Rajucolta</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('palcacocha')">
+                    <div class="place-dot classic"></div>
+                    <span>Laguna Palcacocha</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('honcopampa')">
+                    <div class="place-dot classic"></div>
+                    <span>Honcopampa</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('chacas')">
+                    <div class="place-dot classic"></div>
+                    <span>Chacas</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('yungay')">
+                    <div class="place-dot classic"></div>
+                    <span>Yungay</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('caraz')">
+                    <div class="place-dot classic"></div>
+                    <span>Caraz</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>🏛️ Centros Urbanos</h3>
+                <div class="place-item" onclick="focusPlace('plazaarmas')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Plaza de Armas Huaraz</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('santuario')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Santuario del Señor de la Soledad</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('museo')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Museo Arqueológico de Ancash</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('catedral')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Catedral de Huaraz</span>
+                </div>
+            </div>
+            
+            <div class="category">
+                <h3>🎒 Trekkings Largos</h3>
+                <div class="place-item" onclick="focusPlace('santacruz')">
+                    <div class="place-dot trekking"></div>
+                    <span>Trekking Santa Cruz</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('huayhuash')">
+                    <div class="place-dot trekking"></div>
+                    <span>Trekking Huayhuash</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('olleros')">
+                    <div class="place-dot trekking"></div>
+                    <span>Trekking Olleros-Chavín</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+        
+        <div class="legend">
+            <h4>Leyenda</h4>
+            <div class="legend-item">
+                <div class="legend-dot classic"></div>
+                <span>Nuevos Descubrimientos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot new-routes"></div>
+                <span>Centros Urbanos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot panoramic"></div>
+                <span>Rutas Panorámicas</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot lagoons"></div>
+                <span>Lagunas Especiales</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot mountaineering"></div>
+                <span>Montañismo</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot trekking"></div>
+                <span>Trekkings Largos</span>
+            </div>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script>
+        // Inicializar el mapa centrado en Huaraz
+        const map = L.map('map').setView([-9.5257, -77.5280], 10);
+        
+        // Añadir capa de mapa
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // Definir iconos personalizados para cada categoría
+        const createIcon = (color) => {
+            return L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div style="background-color:${color}; width: 20px; height: 20px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>`,
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
+            });
+        };
+        
+        // Datos de los lugares turísticos
+        const places = {
+            // Tours Clásicos
+            laguna69: {
+                coords: [-9.0058, -77.6283],
+                title: "Laguna 69",
+                category: "Tours Clásicos",
+                description: "La caminata estrella de Huaraz. Trekking de 3 horas hasta una laguna de color azul neón a los pies del Nevado Chacraraju.",
+                icon: createIcon('#e74c3c')
+            },
+            llanganuco: {
+                coords: [-9.0850, -77.6450],
+                title: "Lagunas de Llanganuco",
+                category: "Tours Clásicos", 
+                description: "Chinancocha y Orconcocha - Un valle glaciar de belleza sobrecogedora con fácil acceso.",
+                icon: createIcon('#e74c3c')
+            },
+            chavin: {
+                coords: [-9.5944, -77.1772],
+                title: "Chavín de Huántar",
+                category: "Tours Clásicos",
+                description: "Centro ceremonial Patrimonio de la Humanidad. Ruta espectacular pasando por Laguna Querococha y Túnel de Cahuish.",
+                icon: createIcon('#e74c3c')
+            },
+            pastoruri: {
+                coords: [-9.9167, -77.2167],
+                title: "Nevado Pastoruri",
+                category: "Tours Clásicos",
+                description: "Ruta del Cambio Climático. Ver un glaciar de cerca y las famosas Puyas de Raimondi.",
+                icon: createIcon('#e74c3c')
+            },
+            
+            // Nuevas Rutas
+            wilcacocha: {
+                coords: [-9.4833, -77.4833],
+                title: "Laguna Wilcacocha",
+                category: "Nuevas Rutas",
+                description: "El mejor trekking de aclimatación en la Cordillera Negra. Vista panorámica completa de la Cordillera Blanca.",
+                icon: createIcon('#f39c12')
+            },
+            churup: {
+                coords: [-9.4500, -77.4167],
+                title: "Laguna Churup",
+                category: "Nuevas Rutas",
+                description: "Trekking desafiante con tramo de escalada en roca. Muy emocionante y gratificante.",
+                icon: createIcon('#f39c12')
+            },
+            radian: {
+                coords: [-9.2500, -77.2833],
+                title: "Lagunas Radian y Mullaca",
+                category: "Nuevas Rutas",
+                description: "Caminata de aclimatación con vistas espectaculares de Huantsan y Ranrapalca, sin multitudes.",
+                icon: createIcon('#f39c12')
+            },
+            rocotuyoc: {
+                coords: [-9.3500, -77.4500],
+                title: "Rocotuyoc y Laguna Conga",
+                category: "Nuevas Rutas",
+                description: "Nueva ruta que combina caminata por cañón con cascadas y visita a laguna. Refrescante y diferente.",
+                icon: createIcon('#f39c12')
+            },
+            
+            // Rutas Panorámicas
+            olimpica: {
+                coords: [-9.3167, -77.0833],
+                title: "Punta Olímpica",
+                category: "Rutas Panorámicas",
+                description: "Túnel Transandino más alto del mundo (4,736 msnm). Vistas brutales de Huascarán, Chopicalqui y Contrahierbas.",
+                icon: createIcon('#9b59b6')
+            },
+            canonpato: {
+                coords: [-8.8833, -77.8167],
+                title: "Cañón del Pato",
+                category: "Rutas Panorámicas",
+                description: "Ruta dramática donde las cordilleras se acercan. Más de 35 túneles excavados en la roca.",
+                icon: createIcon('#9b59b6')
+            },
+            
+            // Lagunas Especiales
+            paron: {
+                coords: [-8.9167, -77.6833],
+                title: "Laguna Parón",
+                category: "Lagunas Especiales",
+                description: "La más grande de la Cordillera Blanca. Mar interior turquesa custodiado por el Nevado Artesonraju (Paramount Pictures).",
+                icon: createIcon('#3498db')
+            },
+            laguna513: {
+                coords: [-9.2833, -77.6500],
+                title: "Laguna 513",
+                category: "Lagunas Especiales",
+                description: "Trekking exigente de día completo. Laguna espectacular formada por deshielo del nevado Hualcán.",
+                icon: createIcon('#3498db')
+            },
+            keushu: {
+                coords: [-9.2167, -77.2500],
+                title: "Laguna de Keushu",
+                category: "Lagunas Especiales",
+                description: "Laguna poco visitada de color verde esmeralda en la base del Nevado Huantsan.",
+                icon: createIcon('#3498db')
+            },
+            
+            // Montañismo
+            mateo: {
+                coords: [-9.4167, -77.3500],
+                title: "Nevado Mateo (5,150m)",
+                category: "Montañismo",
+                description: "La cumbre de +5,000m más 'sencilla'. Perfecta iniciación al montañismo de altura.",
+                icon: createIcon('#27ae60')
+            },
+            vallunaraju: {
+                coords: [-9.4000, -77.4000],
+                title: "Nevado Vallunaraju (5,686m)",
+                category: "Montañismo",
+                description: "Pico preferido para iniciarse en montañismo con más desafío que el Mateo.",
+                icon: createIcon('#27ae60')
+            },
+            
+            // Nuevos Descubrimientos
+            rajucolta: {
+                coords: [-9.4167, -77.4500],
+                title: "Laguna Rajucolta",
+                category: "Nuevos Descubrimientos",
+                description: "A 4,271m de altura, laguna turquesa oscura vigilante del Nevado Huantsán (6,370m). Trekking fácil/moderado con vistas espectaculares.",
+                icon: createIcon('#e74c3c')
+            },
+            palcacocha: {
+                coords: [-9.3833, -77.3833],
+                title: "Laguna Palcacocha",
+                category: "Nuevos Descubrimientos",
+                description: "Laguna de origen glaciar monitoreada permanentemente. Requiere pernocte y tiene acceso restringido por el Parque Nacional Huascarán.",
+                icon: createIcon('#e74c3c')
+            },
+            honcopampa: {
+                coords: [-9.0833, -77.6167],
+                title: "Honcopampa",
+                category: "Nuevos Descubrimientos",
+                description: "Sitio arqueológico pre-inca con restos de construcciones de piedra y terrazas agrícolas en un hermoso valle.",
+                icon: createIcon('#e74c3c')
+            },
+            chacas: {
+                coords: [-9.1667, -77.0833],
+                title: "Chacas",
+                category: "Nuevos Descubrimientos",
+                description: "Pueblo tradicional famoso por su tallado en madera. Ruta hacia el Callejón de Conchucos con paisajes únicos.",
+                icon: createIcon('#e74c3c')
+            },
+            yungay: {
+                coords: [-9.1333, -77.7500],
+                title: "Yungay",
+                category: "Nuevos Descubrimientos",
+                description: "Ciudad reconstruida tras el aluvión de 1970. Punto de partida para varios trekkings y lagunas de la zona norte.",
+                icon: createIcon('#e74c3c')
+            },
+            caraz: {
+                coords: [-9.0444, -77.8083],
+                title: "Caraz",
+                category: "Nuevos Descubrimientos",
+                description: "La 'Caraz Dulzura' famosa por sus dulces artesanales y como base para explorar la zona norte de la Cordillera Blanca.",
+                icon: createIcon('#e74c3c')
+            },
+            
+            // Centros Urbanos
+            plazaarmas: {
+                coords: [-9.5257, -77.5280],
+                title: "Plaza de Armas Huaraz",
+                category: "Centros Urbanos",
+                description: "Corazón de la ciudad de Huaraz, rodeada de restaurantes, hoteles y agencias de turismo. Punto de encuentro principal.",
+                icon: createIcon('#f39c12')
+            },
+            santuario: {
+                coords: [-9.5250, -77.5275],
+                title: "Santuario del Señor de la Soledad",
+                category: "Centros Urbanos",
+                description: "Símbolo de la fe local, patrono venerado por los huaracinos. Su festividad anual se celebra en mayo.",
+                icon: createIcon('#f39c12')
+            },
+            museo: {
+                coords: [-9.5240, -77.5290],
+                title: "Museo Arqueológico de Ancash",
+                category: "Centros Urbanos",
+                description: "Museo con importantes colecciones de las culturas Chavín, Recuay y otras civilizaciones precolombinas de la región.",
+                icon: createIcon('#f39c12')
+            },
+            catedral: {
+                coords: [-9.5255, -77.5278],
+                title: "Catedral de Huaraz",
+                category: "Centros Urbanos",
+                description: "Catedral moderna reconstruida tras el terremoto de 1970. Importante centro religioso de la ciudad.",
+                icon: createIcon('#f39c12')
+            },
+            
+            // Trekkings Largos (actualizado)
+            olleros: {
+                coords: [-9.2500, -77.2000],
+                title: "Trekking Olleros-Chavín (3 días)",
+                category: "Trekkings Largos",
+                description: "Ruta menos conocida que conecta el pueblo de Olleros con Chavín de Huántar atravesando paisajes andinos únicos.",
+                icon: createIcon('#34495e')
+            },
+            santacruz: {
+                coords: [-8.9500, -77.6000],
+                title: "Trekking Santa Cruz (4 días)",
+                category: "Trekkings Largos",
+                description: "El trekking más famoso de la Cordillera Blanca. Te sumerge en el corazón de los Andes.",
+                icon: createIcon('#34495e')
+            },
+            huayhuash: {
+                coords: [-10.2500, -76.9167],
+                title: "Trekking Huayhuash (8-12 días)",
+                category: "Trekkings Largos",
+                description: "Considerado uno de los circuitos de caminata más hermosos del planeta. Experiencia transformadora.",
+                icon: createIcon('#34495e')
+            }
+        };
+        
+        // Almacenar marcadores para poder enfocarlos
+        const markers = {};
+        
+        // Añadir marcadores al mapa
+        Object.keys(places).forEach(placeId => {
+            const place = places[placeId];
+            const marker = L.marker(place.coords, {icon: place.icon})
+                .addTo(map)
+                .bindPopup(`
+                    <div class="popup-title">${place.title}</div>
+                    <div class="popup-category">${place.category}</div>
+                    <div class="popup-description">${place.description}</div>
+                `);
+            
+            markers[placeId] = marker;
+        });
+        
+        // Función para enfocar un lugar específico
+        function focusPlace(placeId) {
+            const place = places[placeId];
+            if (place) {
+                map.setView(place.coords, 13);
+                markers[placeId].openPopup();
+            }
+        }
+        
+        // Añadir Huaraz como punto de referencia principal
+        L.marker([-9.5257, -77.5280], {
+            icon: L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div style="background-color:#2c3e50; width: 25px; height: 25px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 8px rgba(0,0,0,0.4);"></div>`,
+                iconSize: [25, 25],
+                iconAnchor: [12.5, 12.5]
+            })
+        }).addTo(map).bindPopup(`
+            <div class="popup-title">🏔️ Huaraz</div>
+            <div class="popup-category">Ciudad Base</div>
+            <div class="popup-description">Capital de la aventura en los Andes peruanos. Punto de partida para todas las expediciones.</div>
+        `);
+    </script>
+</body>
 </html>
