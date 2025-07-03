@@ -166,11 +166,13 @@
                 <div class="place-item" onclick="focusPlace('laguna69')">
                     <div class="place-dot classic"></div>
                     <span>Laguna 69</span>
-                    <div class="place-item" onclick="focusPlace('paccha')">
-                    <div class="place-dot new-routes"></div>
-                    <span>Catarata Paccha</span>
+				</div>
+				<div class="place-item" onclick="focusPlace('paron')">
+                    <div class="place-dot lagoons"></div>
+                    <span>Laguna Parón</span>
                 </div>
-            </div>
+				
+            <!-- </div> -->
                 <div class="place-item" onclick="focusPlace('llanganuco')">
                     <div class="place-dot classic"></div>
                     <span>Lagunas de Llanganuco</span>
@@ -210,19 +212,12 @@
                 <div class="place-item" onclick="focusPlace('olimpica')">
                     <div class="place-dot panoramic"></div>
                     <span>Punta Olímpica</span>
-                </div>
-                <div class="place-item" onclick="focusPlace('canonpato')">
-                    <div class="place-dot panoramic"></div>
-                    <span>Cañón del Pato</span>
-                </div>
+                </div> 
             </div>
             
             <div class="category">
                 <h3>💎 Lagunas Especiales</h3>
-                <div class="place-item" onclick="focusPlace('paron')">
-                    <div class="place-dot lagoons"></div>
-                    <span>Laguna Parón</span>
-                </div>
+                
                 <div class="place-item" onclick="focusPlace('laguna513')">
                     <div class="place-dot lagoons"></div>
                     <span>Laguna 513</span>
@@ -259,6 +254,10 @@
                     <div class="place-dot classic"></div>
                     <span>Honcopampa</span>
                 </div>
+				<div class="place-item" onclick="focusPlace('paccha')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Catarata Paccha</span>
+                </div>
                 <div class="place-item" onclick="focusPlace('chacas')">
                     <div class="place-dot classic"></div>
                     <span>Chacas</span>
@@ -293,21 +292,7 @@
                 </div>
             </div>
             
-            <div class="category">
-                <h3>🎒 Trekkings Largos</h3>
-                <div class="place-item" onclick="focusPlace('santacruz')">
-                    <div class="place-dot trekking"></div>
-                    <span>Trekking Santa Cruz</span>
-                </div>
-                <div class="place-item" onclick="focusPlace('huayhuash')">
-                    <div class="place-dot trekking"></div>
-                    <span>Trekking Huayhuash</span>
-                </div>
-                <div class="place-item" onclick="focusPlace('olleros')">
-                    <div class="place-dot trekking"></div>
-                    <span>Trekking Olleros-Chavín</span>
-                </div>
-            </div>
+             
         </div>
         
         <div id="map"></div>
@@ -334,10 +319,7 @@
                 <div class="legend-dot mountaineering"></div>
                 <span>Montañismo</span>
             </div>
-            <div class="legend-item">
-                <div class="legend-dot trekking"></div>
-                <span>Trekkings Largos</span>
-            </div>
+             
         </div>
     </div>
 
@@ -365,14 +347,14 @@
         const places = {
             // Tours Clásicos
             laguna69: {
-                coords: [-9.0058, -77.6283],
+                coords: [-9.009845101959598, -77.61251796578065],
                 title: "Laguna 69",
                 category: "Tours Clásicos",
                 description: "La caminata estrella de Huaraz. Trekking de 3 horas hasta una laguna de color azul neón a los pies del Nevado Chacraraju.",
                 icon: createIcon('#e74c3c')
             },
             llanganuco: {
-                coords: [-9.0850, -77.6450],
+                coords: [-9.073722003806939, -77.64585368010464],
                 title: "Lagunas de Llanganuco",
                 category: "Tours Clásicos", 
                 description: "Chinancocha y Orconcocha - Un valle glaciar de belleza sobrecogedora con fácil acceso.",
@@ -386,7 +368,7 @@
                 icon: createIcon('#e74c3c')
             },
             pastoruri: {
-                coords: [-9.9167, -77.2167],
+                coords: [-9.911562338137731, -77.18377205035405],
                 title: "Nevado Pastoruri",
                 category: "Tours Clásicos",
                 description: "Ruta del Cambio Climático. Ver un glaciar de cerca y las famosas Puyas de Raimondi.",
@@ -395,76 +377,71 @@
             
             // Nuevas Rutas
             wilcacocha: {
-                coords: [-9.4833, -77.4833],
+                coords: [-9.596626013164181, -77.53185739518655],
                 title: "Laguna Wilcacocha",
                 category: "Nuevas Rutas",
                 description: "El mejor trekking de aclimatación en la Cordillera Negra. Vista panorámica completa de la Cordillera Blanca.",
                 icon: createIcon('#f39c12')
             },
             churup: {
-                coords: [-9.4500, -77.4167],
+                coords: [-9.484634522402796, -77.42744561245983],
                 title: "Laguna Churup",
                 category: "Nuevas Rutas",
                 description: "Trekking desafiante con tramo de escalada en roca. Muy emocionante y gratificante.",
                 icon: createIcon('#f39c12')
             },
             radian: {
-                coords: [-9.2500, -77.2833],
+                coords: [-9.444507917040013, -77.50935021825987],
                 title: "Lagunas Radian y Mullaca",
                 category: "Nuevas Rutas",
                 description: "Caminata de aclimatación con vistas espectaculares de Huantsan y Ranrapalca, sin multitudes.",
                 icon: createIcon('#f39c12')
             },
             rocotuyoc: {
-                coords: [-9.1500, -77.5500],
-                title: "Laguna Rocotuyoc y Laguna Congelada",
+                coords: [-9.282455757017415, -77.45301048110602],
+                title: "Laguna Rocotuyoc ",
                 category: "Nuevas Rutas",
-                description: "RUTA IMPERDIBLE 2025: Laguna Rocotuyoc (4,200m) con aguas azul esmeralda + Laguna Congelada (4,550m) al pie del Nevado Paccharaju con bloques de hielo flotantes. Caminata suave 30 min. Ideal aclimatación.",
+                description: "RUTA IMPERDIBLE 2025: Laguna Rocotuyoc ",
                 icon: createIcon('#f39c12')
             },
             
             // Rutas Panorámicas
             olimpica: {
-                coords: [-9.3167, -77.0833],
+                coords: [-9.134833984301872, -77.51090387636815],
                 title: "Punta Olímpica",
                 category: "Rutas Panorámicas",
                 description: "Túnel Transandino más alto del mundo (4,736 msnm). Vistas brutales de Huascarán, Chopicalqui y Contrahierbas.",
                 icon: createIcon('#9b59b6')
             },
-            canonpato: {
-                coords: [-8.8833, -77.8167],
-                title: "Cañón del Pato",
-                category: "Rutas Panorámicas",
-                description: "Ruta dramática donde las cordilleras se acercan. Más de 35 túneles excavados en la roca.",
-                icon: createIcon('#9b59b6')
-            },
+             
             
             // Lagunas Especiales
             paron: {
-                coords: [-8.9167, -77.6833],
+                coords: [-8.992924327671059, -77.6721089699303],
                 title: "Laguna Parón",
                 category: "Lagunas Especiales",
                 description: "La más grande de la Cordillera Blanca. Mar interior turquesa custodiado por el Nevado Artesonraju (Paramount Pictures).",
                 icon: createIcon('#3498db')
             },
             laguna513: {
-                coords: [-9.2833, -77.6500],
+                coords: [-9.21023235686601, -77.54152930498223],
                 title: "Laguna 513",
                 category: "Lagunas Especiales",
                 description: "Trekking exigente de día completo. Laguna espectacular formada por deshielo del nevado Hualcán.",
                 icon: createIcon('#3498db')
             },
             keushu: {
-                coords: [-9.2167, -77.2500],
+                coords: [-9.087794824751224, -77.69702907595374],
                 title: "Laguna de Keushu",
                 category: "Lagunas Especiales",
                 description: "Laguna poco visitada de color verde esmeralda en la base del Nevado Huantsan.",
                 icon: createIcon('#3498db')
-            },
+            }, 
+			
             
             // Montañismo
             mateo: {
-                coords: [-9.4167, -77.3500],
+                coords: [-9.104526183566378, -77.49019291237387],
                 title: "Nevado Mateo (5,150m)",
                 category: "Montañismo",
                 description: "La cumbre de +5,000m más 'sencilla'. Perfecta iniciación al montañismo de altura.",
@@ -480,36 +457,36 @@
             
             // Nuevos Descubrimientos
             rajucolta: {
-                coords: [-9.4167, -77.4500],
+                coords: [-9.521718808031004, -77.3420978145699],
                 title: "Laguna Rajucolta",
                 category: "Nuevos Descubrimientos",
                 description: "A 4,271m de altura, laguna turquesa oscura vigilante del Nevado Huantsán (6,370m). Trekking fácil/moderado con vistas espectaculares.",
                 icon: createIcon('#e74c3c')
             },
             palcacocha: {
-                coords: [-9.3833, -77.3833],
+                coords: [-9.396561053103078, -77.37957017725398],
                 title: "Laguna Palcacocha",
                 category: "Nuevos Descubrimientos",
                 description: "Laguna de origen glaciar monitoreada permanentemente. Requiere pernocte y tiene acceso restringido por el Parque Nacional Huascarán.",
                 icon: createIcon('#e74c3c')
             },
             honcopampa: {
-                coords: [-9.0833, -77.6167],
+                coords: [-9.358790139536204, -77.51318102240555],
                 title: "Honcopampa",
                 category: "Nuevos Descubrimientos",
                 description: "Sitio arqueológico pre-inca con restos de construcciones de piedra y terrazas agrícolas en un hermoso valle.",
                 icon: createIcon('#e74c3c')
             },
             chacas: {
-                coords: [-9.1667, -77.0833],
+                coords: [-9.162135418878195, -77.36615948575106],
                 title: "Chacas",
                 category: "Nuevos Descubrimientos",
                 description: "Pueblo tradicional famoso por su tallado en madera. Ruta hacia el Callejón de Conchucos con paisajes únicos.",
                 icon: createIcon('#e74c3c')
             },
             yungay: {
-                coords: [-9.1333, -77.7500],
-                title: "Yungay",
+                coords: [-9.150274110195577, -77.73680416418715],
+                title: "Yungay - Campo Santo",
                 category: "Nuevos Descubrimientos",
                 description: "Ciudad reconstruida tras el aluvión de 1970. Punto de partida para varios trekkings y lagunas de la zona norte.",
                 icon: createIcon('#e74c3c')
@@ -524,14 +501,14 @@
             
             // Añadir también la Catarata Paccha que forma parte de la ruta
             paccha: {
-                coords: [-9.1400, -77.5600],
+                coords: [-9.320903084819657, -77.47763006516084],
                 title: "Catarata Paccha",
                 category: "Nuevas Rutas", 
                 description: "Hermosa cascada en la ruta hacia Rocotuyoc. Parte del tour completo que incluye pinturas rupestres y la comunidad de Vicos.",
                 icon: createIcon('#f39c12')
             },
             plazaarmas: {
-                coords: [-9.5257, -77.5280],
+                coords: [-9.529817186796324, -77.52832899844364],
                 title: "Plaza de Armas Huaraz",
                 category: "Centros Urbanos",
                 description: "Corazón de la ciudad de Huaraz, rodeada de restaurantes, hoteles y agencias de turismo. Punto de encuentro principal.",
@@ -557,30 +534,7 @@
                 category: "Centros Urbanos",
                 description: "Catedral moderna reconstruida tras el terremoto de 1970. Importante centro religioso de la ciudad.",
                 icon: createIcon('#f39c12')
-            },
-            
-            // Trekkings Largos (actualizado)
-            olleros: {
-                coords: [-9.2500, -77.2000],
-                title: "Trekking Olleros-Chavín (3 días)",
-                category: "Trekkings Largos",
-                description: "Ruta menos conocida que conecta el pueblo de Olleros con Chavín de Huántar atravesando paisajes andinos únicos.",
-                icon: createIcon('#34495e')
-            },
-            santacruz: {
-                coords: [-8.9500, -77.6000],
-                title: "Trekking Santa Cruz (4 días)",
-                category: "Trekkings Largos",
-                description: "El trekking más famoso de la Cordillera Blanca. Te sumerge en el corazón de los Andes.",
-                icon: createIcon('#34495e')
-            },
-            huayhuash: {
-                coords: [-10.2500, -76.9167],
-                title: "Trekking Huayhuash (8-12 días)",
-                category: "Trekkings Largos",
-                description: "Considerado uno de los circuitos de caminata más hermosos del planeta. Experiencia transformadora.",
-                icon: createIcon('#34495e')
-            }
+            } 
         };
         
         // Almacenar marcadores para poder enfocarlos
