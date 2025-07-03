@@ -188,7 +188,11 @@
             </div>
             
             <div class="category">
-                <h3>🥾 Nuevas Rutas</h3>
+                <h3>🥾 Nuevas Rutas</h3>				
+				<div class="place-item" onclick="focusPlace('chancos')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Baños Termales de Chancos</span>
+                </div>
                 <div class="place-item" onclick="focusPlace('wilcacocha')">
                     <div class="place-dot new-routes"></div>
                     <span>Laguna Wilcacocha</span>
@@ -291,8 +295,47 @@
                     <span>Catedral de Huaraz</span>
                 </div>
             </div>
+			
+			<div class="category">
+                <h3>Cascadas </h3>
+                <div class="place-item" onclick="focusPlace('iquinpavas')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Cascada de IquinPavas</span>
+                </div>
+                <!-- <div class="place-item" onclick="focusPlace('santuario')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Santuario del Señor de la Soledad</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('museo')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Museo Arqueológico de Ancash</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('catedral')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Catedral de Huaraz</span>
+                </div> -->
+            </div>
             
-             
+			<div class="category">
+                <h3>Sitios Arqueologicos </h3>
+                <div class="place-item" onclick="focusPlace('tumshukaiko')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Tumshukaiko</span>
+                </div>
+                <!-- <div class="place-item" onclick="focusPlace('santuario')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Santuario del Señor de la Soledad</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('museo')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Museo Arqueológico de Ancash</span>
+                </div>
+                <div class="place-item" onclick="focusPlace('catedral')">
+                    <div class="place-dot new-routes"></div>
+                    <span>Catedral de Huaraz</span>
+                </div> -->
+            </div>
+			
         </div>
         
         <div id="map"></div>
@@ -345,6 +388,25 @@
         
         // Datos de los lugares turísticos
         const places = {
+			
+			
+             // Sitios Arqueologicos
+            tumshukaiko: {
+                coords: [-9.037538327624633, -77.81462573708308],
+                title: "Tumshukaiko",
+                category: "Sitios Arqueologicos",
+                description: "",
+                icon: createIcon('#e74c3c')
+            },
+			// Cascadas
+            iquinpavas: {
+                coords: [-9.051407564096092, -77.82471192338714],
+                title: "Cascada iquinpavas",
+                category: "Cascadas",
+                description: "",
+                icon: createIcon('#e74c3c')
+            },
+			
             // Tours Clásicos
             laguna69: {
                 coords: [-9.009845101959598, -77.61251796578065],
@@ -375,7 +437,16 @@
                 icon: createIcon('#e74c3c')
             },
             
+			
             // Nuevas Rutas
+			chancos: {
+                coords: [-9.317787606312645, -77.57185458093358],
+                title: "Baños Termales de Chancos",
+                category: "Nuevas Rutas",
+                description: "",
+                icon: createIcon('#f39c12')
+            },
+			
             wilcacocha: {
                 coords: [-9.596626013164181, -77.53185739518655],
                 title: "Laguna Wilcacocha",
